@@ -5,7 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Greybox Scenes/GB_FrontDesk.unity
+    guid: 377581623b7fd75488486f23d4cb32ce
+  - enabled: 1
+    path: Assets/Scenes/Greybox Scenes/GB_ComputerScreen.unity
+    guid: a9826c240dbfbdf4f95b8fd1598832b4
+  - enabled: 1
+    path: Assets/Scenes/Greybox Scenes/GB_BackDesk.unity
+    guid: a23c8d2918e994645b3241d6d1652d3c
   m_configObjects: {}
