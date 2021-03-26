@@ -1727,6 +1727,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc4f4720d9532f944a0b5f7af1292c0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  redLight: {fileID: 99709281}
+  greenLight: {fileID: 2025119976}
 --- !u!1 &955066639
 GameObject:
   m_ObjectHideFlags: 0
@@ -2213,8 +2215,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1056358515}
   - component: {fileID: 1056358514}
+  - component: {fileID: 1056358516}
+  - component: {fileID: 1056358517}
   m_Layer: 0
-  m_Name: ClickControl
+  m_Name: Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2246,6 +2250,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1056358516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056358513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8701a85e02002dd4b86f45739e97b358, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1056358517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056358513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3675c312a83c1140aa64a5714e55cb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstTimerMax: 0
+  firstTimerMin: 0
+  secondTimerMax: 0
+  secondTimerMin: 0
 --- !u!1 &1103314745
 GameObject:
   m_ObjectHideFlags: 0
@@ -2888,6 +2920,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc4f4720d9532f944a0b5f7af1292c0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  redLight: {fileID: 1119638424}
+  greenLight: {fileID: 793990379}
 --- !u!1 &1464118870
 GameObject:
   m_ObjectHideFlags: 0
@@ -3132,6 +3166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc4f4720d9532f944a0b5f7af1292c0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  redLight: {fileID: 242826314}
+  greenLight: {fileID: 1103314746}
 --- !u!1 &1529224879
 GameObject:
   m_ObjectHideFlags: 0
@@ -3338,6 +3374,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc4f4720d9532f944a0b5f7af1292c0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  redLight: {fileID: 160445741}
+  greenLight: {fileID: 464060239}
 --- !u!1 &1752707915
 GameObject:
   m_ObjectHideFlags: 0
@@ -3871,6 +3909,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc4f4720d9532f944a0b5f7af1292c0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  redLight: {fileID: 1580562015}
+  greenLight: {fileID: 1128453224}
 --- !u!1 &2134328724
 GameObject:
   m_ObjectHideFlags: 0

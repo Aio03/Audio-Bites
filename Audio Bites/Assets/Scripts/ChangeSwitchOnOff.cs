@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class ChangeSwitchOnOff : MonoBehaviour
 {
-    private Transform redLight;
-    private Transform greenLight;
+    public Transform redLight;
+    public Transform greenLight;
     private bool universalSwitchVar;
-
-    private void Start()
-    {
-        redLight = gameObject.transform.GetChild(0);
-        greenLight = gameObject.transform.GetChild(1);
-    }
 
     void Update()
     {

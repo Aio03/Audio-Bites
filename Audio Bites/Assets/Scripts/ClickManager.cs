@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class ClickManager : MonoBehaviour
 {
-    private static ClickManager clickManagerInstance;
+    private static ClickManager ManagerInstance;
     private void Awake()
     {
         DontDestroyOnLoad(this);
 
-        if (clickManagerInstance == null)
+        if (ManagerInstance == null)
         {
-            clickManagerInstance = this;
+            ManagerInstance = this;
         } else
         {
             Object.Destroy(gameObject);
@@ -127,6 +127,45 @@ public class ClickManager : MonoBehaviour
                     else
                     {
                         UniversalVariables.powerSwitch = false;
+                    }
+                }
+
+                //Ignore Errors On/Off Click
+                if (objectName == "IgnoreErrorsClick")
+                {
+                    if (UniversalVariables.ignoreErrors == false)
+                    {
+                        UniversalVariables.ignoreErrors = true;
+                    }
+                    else
+                    {
+                        UniversalVariables.ignoreErrors = false;
+                    }
+                }
+
+                //Dynamic Processing On/Off Click
+                if (objectName == "DynamicProcessingClick")
+                {
+                    if (UniversalVariables.dynamicProcessing == false)
+                    {
+                        UniversalVariables.dynamicProcessing = true;
+                    }
+                    else
+                    {
+                        UniversalVariables.dynamicProcessing = false;
+                    }
+                }
+
+                //Video Engine On/Off Click
+                if (objectName == "VideoEngineClick")
+                {
+                    if (UniversalVariables.videoEngine == false)
+                    {
+                        UniversalVariables.videoEngine = true;
+                    }
+                    else
+                    {
+                        UniversalVariables.videoEngine = false;
                     }
                 }
 
