@@ -41,18 +41,18 @@ public class RandomiseOptions : MonoBehaviour
     {
         if (haveOptionsChanged == false)
         {
+            
+            
+
+            //True/False Variables
             deskSwitchRandom = Random.Range(0, 1);
             interfaceSwitchRandom = Random.Range(0, 1);
             computerSwitchRandom = Random.Range(0, 1);
             speakersSwitchRandom = Random.Range(0, 1);
-            playbackEngineRandom = Random.Range(0, 2);
-            bufferSizeRandom = Random.Range(0, 5);
             ignoreErrorsRandom = Random.Range(0, 1);
             dynamicProcessingRandom = Random.Range(0, 1);
             videoEngineRandom = Random.Range(0, 1);
-            cacheSizeRandom = Random.Range(0, 13);
 
-            //True/False Variables
             if (deskSwitchRandom == 0)
             {
                 UniversalVariables.deskSwitch = false;
@@ -117,6 +117,23 @@ public class RandomiseOptions : MonoBehaviour
             }
 
             //Varied Variables
+            playbackEngineRandom = Random.Range(0, 2);
+            bufferSizeRandom = Random.Range(0, 5);
+            cacheSizeRandom = Random.Range(0, 13);
+
+            if (playbackEngineRandom == 0)
+            {
+                UniversalVariables.playbackEngine = false;
+            }
+            if (playbackEngineRandom == 1)
+            {
+                UniversalVariables.playbackEngine = false;
+            }
+            if (playbackEngineRandom == 2)
+            {
+                UniversalVariables.playbackEngine = true;
+            }
+
         }
     }
 }
