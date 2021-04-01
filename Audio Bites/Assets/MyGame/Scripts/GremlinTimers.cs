@@ -78,6 +78,7 @@ public class GremlinTimers : MonoBehaviour
     {
         Debug.Log("Enabling", gameObject);
         print("how many times");
+        firstTimer = Random.Range(firstTimerMin, firstTimerMax);
         StartCoroutine("FirstTimerCoro", firstTimer);
     }
 

@@ -66,6 +66,12 @@ public class ClickManager : MonoBehaviour
                     SceneChange("GB_Grade");
                 }
 
+                //Exit Application Click
+                if (objectName == "ExitClick")
+                {
+                    Application.Quit();
+                }
+
                 //Light Switch On/Off Click
                 if (objectName == "LightSwitchClick")
                 {

@@ -4,9 +4,20 @@ using UnityEngine;
 
 public class ChangeSwitchOnOff : MonoBehaviour
 {
+    [Header("Children")]
     public Transform redLight;
     public Transform greenLight;
     private bool universalSwitchVar;
+    
+    /// This section is for a script no longer used
+    /*
+    private Switch switchScript;
+    private bool switched;
+
+    private void Start()
+    {
+        switchScript = GetComponent<Switch>();
+    }*/
 
     void Update()
     {
@@ -37,11 +48,22 @@ public class ChangeSwitchOnOff : MonoBehaviour
         {
             redLight.gameObject.SetActive(false);
             greenLight.gameObject.SetActive(true);
+            
+            /*Unused
+            if (switched == false)
+            {
+                print("switched called");
+                switchScript.SwitchPressed();
+                switched = true;
+            }*/
         }
         else
         {
             redLight.gameObject.SetActive(true);
             greenLight.gameObject.SetActive(false);
+            
+            /* Unused
+            switched = false;*/
         }
     }
 }

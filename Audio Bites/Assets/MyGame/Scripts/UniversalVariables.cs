@@ -4,7 +4,7 @@ using UnityEngine;
 
 /// <summary>
 /// Handles all the static variables (the ones that need to stay the same between scenes) so that other objects can grab from it
-/// Key: (un - unused)
+/// Key: (un - unused) | (c_ - correct)
 /// </summary>
 
 public static class UniversalVariables
@@ -35,8 +35,9 @@ public static class UniversalVariables
     public static int bufferDropdown;
     public static int cacheSizeDropdown;
 
-    //Grading Variables
-
+    //Grading Specific Variables
+    public static bool resetSystemFirst;
+    public static bool c_Order_DICS;
 
     /// <summary>
     /// This function resets all the variables so the player can replay the game
@@ -65,6 +66,9 @@ public static class UniversalVariables
         playbackEngineDropdown = 0;
         bufferDropdown = 0;
         cacheSizeDropdown = 0;
+
+        resetSystemFirst = false;
+        c_Order_DICS = false;
     }
 
 }
