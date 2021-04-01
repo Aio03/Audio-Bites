@@ -24,6 +24,12 @@ public static class UniversalVariables
     public static bool cacheNormal = true;
     public static float cacheSize;
 
+    //Dropdown Values
+    public static int playbackEngineDropdown;
+    public static int bufferDropdown;
+    public static int cacheSizeDropdown;
+
     //Grading Variables
+
 
 }

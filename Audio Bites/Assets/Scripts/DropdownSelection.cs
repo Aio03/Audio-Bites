@@ -25,6 +25,7 @@ public class DropdownSelection : MonoBehaviour
             {
                 UniversalVariables.playbackEngine = true;
             }
+            UniversalVariables.playbackEngineDropdown = val;
         }
         if (this.gameObject.name == "Buffer Size")
         {
@@ -52,6 +53,7 @@ public class DropdownSelection : MonoBehaviour
             {
                 UniversalVariables.bufferSize = 1024;
             }
+            UniversalVariables.bufferDropdown = val;
         }
         if (this.gameObject.name == "Cache Size")
         {
@@ -125,6 +127,7 @@ public class DropdownSelection : MonoBehaviour
                 UniversalVariables.cacheNormal = false;
                 UniversalVariables.cacheSize = 12f;
             }
+            UniversalVariables.cacheSizeDropdown = val;
         }
 
     }
