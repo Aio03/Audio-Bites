@@ -5,24 +5,12 @@ using TMPro;
 
 public class DropdownSelection : MonoBehaviour
 {
-
-    
-    
-
-    //Debugging check for buffer size
     private void Update()
     {
         print("buffer size: " + UniversalVariables.bufferSize);
-        print("playback engine dropdown value: " + UniversalVariables.playbackEngineDropdown);
-        print("buffer size dropdown value: " + UniversalVariables.bufferDropdown);
-        print("cache size dropdown value: " + UniversalVariables.cacheSizeDropdown);
     }
-
-    //This function handles the dropdown values
-    public void HandleInputData(int val)
+    public void HandleInputDate(int val)
     {
-        /// Each of these will set the universal variables depending on what option chosen
-        //Playback Engine Dropdown
         if (this.gameObject.name == "Playback Engine")
         {
             if (val == 0)
@@ -37,11 +25,7 @@ public class DropdownSelection : MonoBehaviour
             {
                 UniversalVariables.playbackEngine = true;
             }
-            UniversalVariables.playbackEngineDropdown = val;
-            print("Playback Engine val: " + val);
         }
-
-        //Buffer Size Dropdown
         if (this.gameObject.name == "Buffer Size")
         {
             if (val == 0)
@@ -68,11 +52,7 @@ public class DropdownSelection : MonoBehaviour
             {
                 UniversalVariables.bufferSize = 1024;
             }
-            UniversalVariables.bufferDropdown = val;
-            print("Buffer Size val: " + val);
         }
-
-        //Cache Size Dropdown
         if (this.gameObject.name == "Cache Size")
         {
             if (val == 0)
@@ -145,8 +125,6 @@ public class DropdownSelection : MonoBehaviour
                 UniversalVariables.cacheNormal = false;
                 UniversalVariables.cacheSize = 12f;
             }
-            UniversalVariables.cacheSizeDropdown = val;
-            print("Cache Size val: " + val);
         }
 
     }
