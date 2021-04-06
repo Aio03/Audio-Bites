@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: 
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/MyGame/Scenes/Greybox Scenes/GB_FrontDesk.unity
     guid: 377581623b7fd75488486f23d4cb32ce
@@ -20,4 +20,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MyGame/Scenes/Greybox Scenes/GB_Grade.unity
     guid: a27d051661e52c8449f1bce6b99b3013
+  - enabled: 1
+    path: Assets/MyGame/Scenes/Final Scenes/00_MainMenu.unity
+    guid: 929d22c537a716742adc36ad9b4d42a5
+  - enabled: 1
+    path: Assets/MyGame/Scenes/Final Scenes/01_Initialisation.unity
+    guid: 73099f33910c2614e8956006d4c3d97d
+  - enabled: 1
+    path: Assets/MyGame/Scenes/Final Scenes/02_Introduction.unity
+    guid: a07cdf97d8d9a0546ab1d90a7c8a94fb
+  - enabled: 1
+    path: Assets/MyGame/Scenes/Final Scenes/03_FrontDesk.unity
+    guid: edcf347c0085f2943880751972fdf099
+  - enabled: 1
+    path: Assets/MyGame/Scenes/Final Scenes/04_BackDesk.unity
+    guid: 8790c194ad14de745803f7fc00e99c50
+  - enabled: 1
+    path: Assets/MyGame/Scenes/Final Scenes/05_Computer.unity
+    guid: d39657ad581ace448845042a7655bb0f
+  - enabled: 1
+    path: Assets/MyGame/Scenes/Final Scenes/06_Grade.unity
+    guid: c888ea4e18e4c014d85e75b7abb3cbe8
   m_configObjects: {}

@@ -5,15 +5,15 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637520679309802305
-    m_Hash: 2196797322
+      ticks: 637525937834471003
+    m_Hash: 1341574465
   m_LockFileStatus:
     m_FilePath: C:/Users/mschimpf/Documents/GitHub/Audio-Bites/Audio Bites/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637532708841980155
+      ticks: 637532891165339663
     m_Hash: 3376577155
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -1215,7 +1215,6 @@ m_PackageAssets:
         - 1.4.4
         - 1.4.5
         - 1.4.6
-        - 1.4.7
         - 1.5.0-pre.2
         - 1.5.0-preview.1
         - 1.5.0-preview.2
@@ -1231,7 +1230,6 @@ m_PackageAssets:
         - 1.6.0-pre.3
         compatible:
         - 1.4.6
-        - 1.4.7
         - 1.5.0-pre.2
         - 1.5.0-preview.1
         - 1.5.0-preview.2
@@ -1245,7 +1243,7 @@ m_PackageAssets:
         - 1.5.4
         - 1.6.0-pre.1
         - 1.6.0-pre.3
-        verified: 1.4.7
+        verified: 1.4.6
       dependencies:
       - name: com.unity.modules.director
         version: 1.0.0
