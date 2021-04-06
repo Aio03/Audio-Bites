@@ -28,7 +28,7 @@ public class SwitchOrderValidator : MonoBehaviour
         {
             for (int i = 1; i < switchesPressedOrder.Count; ++i)
             {
-                if (switchesPressedOrder[i] != i)
+                if (switchesPressedOrder[i] != switches[i].orderId)
                 {
                     switchesInOrder = false;
                     break;

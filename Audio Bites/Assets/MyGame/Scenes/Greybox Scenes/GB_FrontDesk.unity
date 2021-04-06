@@ -1298,6 +1298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstTimerMax: 20
   firstTimerMin: 35
+  firstTimer: 0
   secondTimerMax: 40
   secondTimerMin: 50
 --- !u!1 &1776669028
@@ -2244,6 +2245,7 @@ GameObject:
   - component: {fileID: 2088611222}
   - component: {fileID: 2088611221}
   - component: {fileID: 2088611225}
+  - component: {fileID: 2088611226}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -2315,6 +2317,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uniqueSwitchCode: 0
+--- !u!114 &2088611226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088611220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8e53fb8a537414784cc5cf0451dc0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testSound: {fileID: 0}
 --- !u!1 &2140658138
 GameObject:
   m_ObjectHideFlags: 0

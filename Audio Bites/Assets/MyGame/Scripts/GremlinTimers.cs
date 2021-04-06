@@ -11,8 +11,8 @@ public class GremlinTimers : MonoBehaviour
     [Range(0, 120)]
     [Tooltip("in real-time seconds")]
     public float firstTimerMin;
-
-    private float firstTimer;
+    [HideInInspector]
+    public float firstTimer;
 
     [Header("Second Timer")]
     [Range(0, 120)]
@@ -31,6 +31,7 @@ public class GremlinTimers : MonoBehaviour
 
     IEnumerator FirstTimerCoro(float Count)
     {
+        print("activated once");
         yield return new WaitForSeconds(Count);
         UniversalVariables.lightSwitch = false;
         clickManager.SceneChange("GB_FrontDesk");
@@ -41,6 +42,7 @@ public class GremlinTimers : MonoBehaviour
 
     IEnumerator SecondTimerCoro(float Count)
     {
+        print("second activated");
         yield return new WaitForSeconds(Count);
         UniversalVariables.lightSwitch = false;
         clickManager.SceneChange("GB_FrontDesk");
@@ -78,8 +80,8 @@ public class GremlinTimers : MonoBehaviour
     {
         Debug.Log("Enabling", gameObject);
         print("how many times");
-        firstTimer = Random.Range(firstTimerMin, firstTimerMax);
-        StartCoroutine("FirstTimerCoro", firstTimer);
+        //firstTimer = Random.Range(firstTimerMin, firstTimerMax);
+        //StartCoroutine("FirstTimerCoro", firstTimer);
     }
 
 }
