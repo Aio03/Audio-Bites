@@ -6,4 +6,7 @@ public class ConsistentVariables : MonoBehaviour
 {
     [HideInInspector]
     public bool lights = true;
+
+    [HideInInspector]
+    public bool power;
 }

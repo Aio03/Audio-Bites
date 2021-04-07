@@ -9,6 +9,9 @@ using UnityEngine.SceneManagement;
 
 public class Clicks : MonoBehaviour
 {
+
+    public LayerMask IgnoreMe;
+
     //Variables
     private ConsistentVariables variables;
     private void Start()
@@ -27,11 +30,12 @@ public class Clicks : MonoBehaviour
             Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
 
             ///Casts a raycast using the mouse position
-            RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
+            RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero, Mathf.Infinity, ~IgnoreMe);
 
             ///Checks if the raycast hit anything
             if (hit.collider != null)
             {
+                print(hit.collider.gameObject.name);
                 ///Makes temporary variable of what the raycast hit so we can call it later
                 var objectName = hit.collider.gameObject.name;
 
@@ -48,17 +52,21 @@ public class Clicks : MonoBehaviour
                     SceneChange("04_BackDesk");
                 }
 
-                ////Comment Click
-                //if (objectName == "")
+                //Power Ports Switches
+                if (objectName == "Power")
+                {
+                    variables.power = !variables.power;
+                }
+
+                if (objectName == "Computer")
+                {
+                    SceneChange("05_Computer");
+                }
+
+                ////Example of switching variables with a click
+                //if (objectName == "OBJECTNAME")
                 //{
-                //    if (UniversalVariables. == false)
-                //    {
-                //        UniversalVariables. = true;
-                //    }
-                //    else
-                //    {
-                //        UniversalVariables. = false;
-                //    }
+                //    variables.VARIABLE = !variables.VARIABLE;
                 //}
 
 

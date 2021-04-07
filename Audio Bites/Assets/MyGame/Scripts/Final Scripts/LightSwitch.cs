@@ -20,11 +20,12 @@ public class LightSwitch : MonoBehaviour
     {
         if (variables.lights == true)
         {
-            objChild.gameObject.SetActive(false);
+            objChild.gameObject.SetActive(true);
         }
         else
         {
-            objChild.gameObject.SetActive(true);
+            objChild.gameObject.SetActive(false);
         }
     }
+
 }
