@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/MyGame/Scenes/Final Scenes/03_FrontDesk.unity
+- path: Assets/MyGame/Scenes/Final Scenes/01_Initialisation.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
