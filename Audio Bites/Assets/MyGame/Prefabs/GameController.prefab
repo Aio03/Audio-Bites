@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9082104116917368271}
   - component: {fileID: 8593579982333145109}
   - component: {fileID: 8018133631310706534}
+  - component: {fileID: 1625663003240327696}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -73,7 +74,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lights: 0
+  computerIsOn: 0
   power: 0
+  deskPower: 0
+  interfacePower: 0
+  computerPower: 0
+  speakerPower: 0
+  ignoreErrors: 0
+  dynamic: 0
+  videoEngine: 0
+  playbackEngine: 0
+  bufferSize: 0
+  cacheSize: 0
+  resetSystem: 0
+  switchesOrder: 0
+  bothSpeakers: 0
+  wantedBufferSize: 0
+  wantedIgnoreErrors: 0
+  wantedDynamicProcessing: 0
 --- !u!114 &8018133631310706534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,6 +107,23 @@ MonoBehaviour:
   IgnoreMe:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &1625663003240327696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476616279818162150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ebf774062cc4f34c8b80293b2848bf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switch_one: 0
+  switch_two: 0
+  switch_three: 0
+  switch_four: 0
+  correctOrder: 0
 --- !u!1001 &6743121852473571461
 PrefabInstance:
   m_ObjectHideFlags: 0

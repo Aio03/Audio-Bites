@@ -31,13 +31,9 @@ public class SwitchChange : MonoBehaviour
         {
             switchVar = variables.computerPower;
         }
-        if (this.gameObject.name == "LeftSpeaker")
+        if (this.gameObject.name == "Speaker")
         {
-            switchVar = variables.speakerLeftPower;
-        }
-        if (this.gameObject.name == "RightSpeaker")
-        {
-            switchVar = variables.speakerRightPower;
+            switchVar = variables.speakerPower;
         }
         if (this.gameObject.name == "Power")
         {

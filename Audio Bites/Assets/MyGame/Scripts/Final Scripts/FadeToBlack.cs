@@ -16,6 +16,8 @@ public class FadeToBlack : MonoBehaviour
     public int fadingSpeed;
     public bool doneFading;
 
+    public Canvas canvasParent;
+
     private void Awake()
     {
         //Set transparency to 100%
@@ -35,6 +37,7 @@ public class FadeToBlack : MonoBehaviour
 
     public IEnumerator FadeBlackOutSquare(bool fadeToBlack = true, int fadeSpeed = 5)
     {
+        canvasParent.sortingOrder = 100;
         doneFading = false;
         Color objectColor = blackOutSquare.GetComponent<Image>().color;
         float fadeAmount;
@@ -62,6 +65,7 @@ public class FadeToBlack : MonoBehaviour
 
                 objectColor = new Color(objectColor.r, objectColor.g, objectColor.b, fadeAmount);
                 blackOutSquare.GetComponent<Image>().color = objectColor;
+                canvasParent.sortingOrder = 0;
                 yield return null;
             }
         }

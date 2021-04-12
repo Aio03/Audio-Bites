@@ -79,12 +79,7 @@ public class MouseHover : MonoBehaviour
             hovering = true;
             textElement.text = "Go in Front of the Desk";
         }
-        if (collision.gameObject.name == "LeftSpeaker")
-        {
-            hovering = true;
-            textElement.text = "Speaker Power";
-        }
-        if (collision.gameObject.name == "RightSpeaker")
+        if (collision.gameObject.name == "Speaker")
         {
             hovering = true;
             textElement.text = "Speaker Power";

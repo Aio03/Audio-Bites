@@ -76,16 +76,10 @@ public class Clicks : MonoBehaviour
                     }
                 }
 
-                //Left Speaker Switch
-                if (objectName == "LeftSpeaker")
+                //Speaker Switch
+                if (objectName == "Speaker")
                 {
-                    variables.speakerLeftPower = !variables.speakerLeftPower;
-                }
-
-                //Right Speaker Switch
-                if (objectName == "RightSpeaker")
-                {
-                    variables.speakerRightPower = !variables.speakerRightPower;
+                    variables.speakerPower = !variables.speakerPower;
                 }
 
                 //Desk Switch
@@ -147,7 +141,6 @@ public class Clicks : MonoBehaviour
                 //Are You Done Yes Answer
                 if (objectName == "YesDone")
                 {
-                    print("complete!");
                     SceneChange("06_Grade");
                 }
 
@@ -155,6 +148,12 @@ public class Clicks : MonoBehaviour
                 if (objectName == "NoDone")
                 {
                     hit.collider.gameObject.transform.parent.gameObject.SetActive(false);
+                }
+
+                //Restart in Grading Screen
+                if (objectName == "Restart")
+                {
+                    SceneChange("07_Reset");
                 }
 
 

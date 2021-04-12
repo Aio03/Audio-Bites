@@ -24,9 +24,7 @@ public class ConsistentVariables : MonoBehaviour
     [HideInInspector]
     public bool computerPower;
     [HideInInspector]
-    public bool speakerLeftPower;
-    [HideInInspector]
-    public bool speakerRightPower;
+    public bool speakerPower;
 
     //Protools tickables
     [HideInInspector]

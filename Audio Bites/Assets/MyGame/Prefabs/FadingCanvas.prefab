@@ -91,6 +91,7 @@ MonoBehaviour:
   blackOutSquare: {fileID: 3223054557935796418}
   fadingSpeed: 1
   doneFading: 0
+  canvasParent: {fileID: 3223054558058963316}
 --- !u!1 &3223054558058963321
 GameObject:
   m_ObjectHideFlags: 0
