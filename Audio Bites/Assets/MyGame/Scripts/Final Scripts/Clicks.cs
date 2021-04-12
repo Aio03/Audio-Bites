@@ -9,6 +9,8 @@ using UnityEngine.SceneManagement;
 
 public class Clicks : MonoBehaviour
 {
+    private bool fading = false;
+    private string sceneName;
 
     public LayerMask IgnoreMe;
 
@@ -68,7 +70,10 @@ public class Clicks : MonoBehaviour
                 //Computer Scene Inspect
                 if (objectName == "Computer")
                 {
-                    SceneChange("05_Computer");
+                    if (variables.computerIsOn)
+                    {
+                        SceneChange("05_Computer");
+                    }
                 }
 
                 //Left Speaker Switch
@@ -133,7 +138,25 @@ public class Clicks : MonoBehaviour
                     var playbackEngine = GameObject.Find("PlaybackEngine");
                     var playbackImage = playbackEngine.gameObject.transform.GetChild(0);
                     playbackImage.gameObject.SetActive(false);
+
+                    var areYouDone = GameObject.Find("AreYouDone");
+                    var areYouDoneImage = areYouDone.gameObject.transform.GetChild(0);
+                    areYouDoneImage.gameObject.SetActive(true);
                 }
+
+                //Are You Done Yes Answer
+                if (objectName == "YesDone")
+                {
+                    print("complete!");
+                    SceneChange("06_Grade");
+                }
+
+                //Are You Done No Answer
+                if (objectName == "NoDone")
+                {
+                    hit.collider.gameObject.transform.parent.gameObject.SetActive(false);
+                }
+
 
                 ////Example of switching variables with a click
                 //if (objectName == "OBJECTNAME")
@@ -144,13 +167,32 @@ public class Clicks : MonoBehaviour
 
 
             }
-
         }
+
+        //Since we don't want the scene to change until the fading has completed and we can't stay in the scene change function while we wait for the fade to complete
+        // we have to add a section into the update function with some single use variables to check if fading is complete, then for it to change scene based on the 
+        // "SceneChange" function variables.
+        if (fading == true)
+        {
+            var fader = GameObject.Find("FadingImage").GetComponent<FadeToBlack>();
+            if (fader.doneFading == true)
+            {
+                SceneManager.LoadScene(sceneName: sceneName);
+                fader.doneFading = false;
+                fading = false;
+            }
+        }
+
     }
 
+    //Sets up the fading within the fading object and sets the relevant variables for scene change
     public void SceneChange(string Scene)
     {
-        SceneManager.LoadScene(sceneName: Scene);
+        fading = true;
+        var fader = GameObject.Find("FadingImage").GetComponent<FadeToBlack>();
+        fader.Fade(true, 3);
+
+        sceneName = Scene;
     }
 
 }

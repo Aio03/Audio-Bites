@@ -14,6 +14,14 @@ public class MouseHover : MonoBehaviour
     private GameObject followingText;
     private TextMeshProUGUI textElement;
 
+    private ConsistentVariables variables;
+
+    private void Start()
+    {
+        ///Finds the variables needed from the GameController
+        variables = GameObject.FindGameObjectWithTag("GameController").GetComponent<ConsistentVariables>();
+    }
+
     private void Awake()
     {
         //Finds the relevant hover text element (which is attached the the Main Camera Prefab in its children)
@@ -57,7 +65,14 @@ public class MouseHover : MonoBehaviour
         if (collision.gameObject.name == "Computer")
         {
             hovering = true;
-            textElement.text = "Go on the Computer";
+            if (variables.computerIsOn == true)
+            {
+                textElement.text = "Go on the Computer";
+            }
+            else
+            {
+                textElement.text = "The Computer is off";
+            }
         }
         if (collision.gameObject.name == "FrontDeskArrow")
         {

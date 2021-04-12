@@ -16,14 +16,12 @@ public class SetDropdownValues : MonoBehaviour
     bool dropdownFound;
 
     private ConsistentVariables variables;
-    private void Start()
-    {
-        ///Finds the variables needed from the GameController
-        variables = GameObject.FindGameObjectWithTag("GameController").GetComponent<ConsistentVariables>();
-    }
 
     private void Awake()
     {
+        ///Finds the variables needed from the GameController
+        variables = GameObject.FindGameObjectWithTag("GameController").GetComponent<ConsistentVariables>();
+
         //Finds the correct dropdown component, uses a bool to see if its found it so it doesn't attempt to find it at the start of each scene change back
         if (dropdownFound == false)
         {

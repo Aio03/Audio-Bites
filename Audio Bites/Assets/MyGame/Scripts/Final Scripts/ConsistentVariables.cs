@@ -11,6 +11,8 @@ public class ConsistentVariables : MonoBehaviour
     //Basic Variables
     [HideInInspector]
     public bool lights = true;
+    [HideInInspector]
+    public bool computerIsOn;
 
     //Real Switches
     [HideInInspector]
@@ -41,5 +43,33 @@ public class ConsistentVariables : MonoBehaviour
     public int bufferSize;
     [HideInInspector]
     public int cacheSize;
+
+    //Soley Grading Variables
+    [HideInInspector]
+    public bool resetSystem;
+    [HideInInspector]
+    public bool switchesOrder;
+    [HideInInspector]
+    public bool bothSpeakers;
+
+    //Scenario Specific Variables
+    [HideInInspector]
+    public int wantedBufferSize;
+    [HideInInspector]
+    public bool wantedIgnoreErrors;
+    [HideInInspector]
+    public bool wantedDynamicProcessing;
+
+    private void Update()
+    {
+        if (power == true && computerPower == true)
+        {
+            computerIsOn = true;
+        }
+        else
+        {
+            computerIsOn = false;
+        }
+    }
 
 }

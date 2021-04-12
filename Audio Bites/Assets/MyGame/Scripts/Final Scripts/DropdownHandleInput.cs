@@ -20,15 +20,15 @@ public class DropdownHandleInput : MonoBehaviour
     public void HandleInputData(int val)
     {
         //Finds which dropdown it is and sets its value with that
-        if (this.gameObject.name == "PlaybackEngineDropdown")
+        if (this.gameObject.name == "PlaybackEngineOption")
         {
             variables.playbackEngine = val;
         }
-        if (this.gameObject.name == "BufferSizeDropdown")
+        if (this.gameObject.name == "BufferSizeOption")
         {
             variables.bufferSize = val;
         }
-        if (this.gameObject.name == "CacheSizeDropdown")
+        if (this.gameObject.name == "CacheSizeOption")
         {
             variables.cacheSize = val;
         }
