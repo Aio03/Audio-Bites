@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/MyGame/Scenes/Greybox Scenes/GB_FrontDesk.unity
+- path: Assets/MyGame/Scenes/Anthony/Testing.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
