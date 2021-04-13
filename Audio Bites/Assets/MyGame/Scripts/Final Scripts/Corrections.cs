@@ -165,6 +165,12 @@ public class Corrections : MonoBehaviour
             m_RectTransform.anchoredPosition = new Vector2(x_placement, y_placement);
             y_placement = y_placement - 35;
         }
+
+        if (x_placement == -124 && y_placement == 175)
+        {
+            textElement.text = nothingWasWrong;
+        }
+
     }
 
     //Text/Information Variables
@@ -173,6 +179,8 @@ public class Corrections : MonoBehaviour
 
     //Text Information
     [Header("Correction Information")]
+    [TextArea(3, 5)]
+    public string nothingWasWrong;
     [TextArea(3, 5)]
     public string noResetInfo;
     [TextArea(3, 5)]

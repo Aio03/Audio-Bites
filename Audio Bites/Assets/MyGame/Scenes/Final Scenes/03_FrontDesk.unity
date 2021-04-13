@@ -1094,6 +1094,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FadingCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3223054558058963321, guid: 9e716276f2de5054aa9c1e38c042f826, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e716276f2de5054aa9c1e38c042f826, type: 3}
 --- !u!1 &776444842

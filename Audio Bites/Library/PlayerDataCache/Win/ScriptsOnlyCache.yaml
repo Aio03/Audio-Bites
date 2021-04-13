@@ -1,17 +1,25 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - ChangeCheckBox
-    - ChangeSwitchOnOff
-    - ClickManager
-    - DropdownSelection
-    - DropdownValues
-    - Grading
-    - GremlinTimers
-    - OnOffLight
-    - RandomiseOptions
-    - Restart
-    - ShowGrading
+    - Bad_SwitchOrderValidator
+    - CanvasElement_FollowMouse
+    - Clicks
+    - ComputerInteraction
+    - ConsistentVariables
+    - Corrections
+    - CursorImage
+    - DisappearInGame
+    - DontDestroyOnLoad
+    - DropdownHandleInput
+    - FadeToBlack
+    - Initialise
+    - LightSwitch
+    - MouseHover
+    - Reset
+    - SFX
+    - SetDropdownValues
+    - SwitchChange
+    - Temp_SpaceToStart
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -19,6 +27,9 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
+    Unity.2D.SpriteShape.Runtime.dll:
+    - UnityEngine.U2D.SpriteShape
+    - UnityEngine.U2D.SpriteShapeController
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -43,6 +54,7 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
@@ -51,129 +63,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Toggle
   sceneClasses:
-    Assets/MyGame/Scenes/Greybox Scenes/GB_BackDesk.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 50
-      Script: {instanceID: 0}
-    - Class: 61
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1656}
-    - Class: 114
-      Script: {instanceID: 1784}
-    - Class: 114
-      Script: {instanceID: 2470}
-    - Class: 114
-      Script: {instanceID: 2658}
-    - Class: 114
-      Script: {instanceID: 2786}
-    - Class: 114
-      Script: {instanceID: 3506}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/MyGame/Scenes/Greybox Scenes/GB_ComputerScreen.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 50
-      Script: {instanceID: 0}
-    - Class: 61
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1512}
-    - Class: 114
-      Script: {instanceID: 1624}
-    - Class: 114
-      Script: {instanceID: 1784}
-    - Class: 114
-      Script: {instanceID: 2470}
-    - Class: 114
-      Script: {instanceID: 2616}
-    - Class: 114
-      Script: {instanceID: 2628}
-    - Class: 114
-      Script: {instanceID: 2658}
-    - Class: 114
-      Script: {instanceID: 2786}
-    - Class: 114
-      Script: {instanceID: 2998}
-    - Class: 114
-      Script: {instanceID: 3006}
-    - Class: 114
-      Script: {instanceID: 3506}
-    - Class: 114
-      Script: {instanceID: 3966}
-    - Class: 114
-      Script: {instanceID: 4144}
-    - Class: 114
-      Script: {instanceID: 4718}
-    - Class: 114
-      Script: {instanceID: 4820}
-    - Class: 114
-      Script: {instanceID: 5026}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/MyGame/Scenes/Greybox Scenes/GB_FrontDesk.unity:
+    Assets/MyGame/Scenes/Final Scenes/00_MainMenu.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -188,44 +78,97 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
-    - Class: 50
+    - Class: 81
       Script: {instanceID: 0}
-    - Class: 61
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1464}
+    - Class: 114
+      Script: {instanceID: 1870}
+    - Class: 114
+      Script: {instanceID: 2186}
+    - Class: 114
+      Script: {instanceID: 2566}
+    - Class: 114
+      Script: {instanceID: 2714}
+    - Class: 114
+      Script: {instanceID: 2756}
+    - Class: 114
+      Script: {instanceID: 3094}
+    - Class: 114
+      Script: {instanceID: 3118}
+    - Class: 114
+      Script: {instanceID: 4346}
+    - Class: 114
+      Script: {instanceID: 4682}
+    - Class: 114
+      Script: {instanceID: 5194}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/MyGame/Scenes/Final Scenes/01_Initialisation.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 58
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1784}
+      Script: {instanceID: 1462}
     - Class: 114
-      Script: {instanceID: 2092}
+      Script: {instanceID: 1464}
     - Class: 114
-      Script: {instanceID: 2470}
+      Script: {instanceID: 1568}
     - Class: 114
-      Script: {instanceID: 2616}
+      Script: {instanceID: 1870}
     - Class: 114
-      Script: {instanceID: 2658}
+      Script: {instanceID: 2094}
     - Class: 114
-      Script: {instanceID: 2786}
+      Script: {instanceID: 2566}
     - Class: 114
-      Script: {instanceID: 2998}
+      Script: {instanceID: 2714}
     - Class: 114
-      Script: {instanceID: 3082}
+      Script: {instanceID: 2756}
     - Class: 114
-      Script: {instanceID: 3282}
+      Script: {instanceID: 3094}
     - Class: 114
-      Script: {instanceID: 3506}
+      Script: {instanceID: 3380}
     - Class: 114
-      Script: {instanceID: 3834}
+      Script: {instanceID: 4072}
     - Class: 114
-      Script: {instanceID: 3940}
+      Script: {instanceID: 4464}
     - Class: 114
-      Script: {instanceID: 4242}
+      Script: {instanceID: 4534}
     - Class: 114
-      Script: {instanceID: 4570}
+      Script: {instanceID: 4888}
     - Class: 114
-      Script: {instanceID: 16738}
+      Script: {instanceID: 5184}
+    - Class: 114
+      Script: {instanceID: 5194}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -244,7 +187,207 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/MyGame/Scenes/Greybox Scenes/GB_Grade.unity:
+    Assets/MyGame/Scenes/Final Scenes/02_Introduction.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    Assets/MyGame/Scenes/Final Scenes/03_FrontDesk.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1462}
+    - Class: 114
+      Script: {instanceID: 1464}
+    - Class: 114
+      Script: {instanceID: 1618}
+    - Class: 114
+      Script: {instanceID: 2046}
+    - Class: 114
+      Script: {instanceID: 2566}
+    - Class: 114
+      Script: {instanceID: 3216}
+    - Class: 114
+      Script: {instanceID: 3970}
+    - Class: 114
+      Script: {instanceID: 4234}
+    - Class: 114
+      Script: {instanceID: 4526}
+    - Class: 114
+      Script: {instanceID: 4752}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 1971053207
+      Script: {instanceID: 0}
+    Assets/MyGame/Scenes/Final Scenes/04_BackDesk.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1462}
+    - Class: 114
+      Script: {instanceID: 1464}
+    - Class: 114
+      Script: {instanceID: 2046}
+    - Class: 114
+      Script: {instanceID: 2566}
+    - Class: 114
+      Script: {instanceID: 3216}
+    - Class: 114
+      Script: {instanceID: 3970}
+    - Class: 114
+      Script: {instanceID: 4234}
+    - Class: 114
+      Script: {instanceID: 4526}
+    - Class: 114
+      Script: {instanceID: 4752}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 1971053207
+      Script: {instanceID: 0}
+    Assets/MyGame/Scenes/Final Scenes/05_Computer.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1462}
+    - Class: 114
+      Script: {instanceID: 1464}
+    - Class: 114
+      Script: {instanceID: 1548}
+    - Class: 114
+      Script: {instanceID: 1708}
+    - Class: 114
+      Script: {instanceID: 1870}
+    - Class: 114
+      Script: {instanceID: 2046}
+    - Class: 114
+      Script: {instanceID: 2566}
+    - Class: 114
+      Script: {instanceID: 2714}
+    - Class: 114
+      Script: {instanceID: 2726}
+    - Class: 114
+      Script: {instanceID: 2756}
+    - Class: 114
+      Script: {instanceID: 3094}
+    - Class: 114
+      Script: {instanceID: 3102}
+    - Class: 114
+      Script: {instanceID: 3216}
+    - Class: 114
+      Script: {instanceID: 3970}
+    - Class: 114
+      Script: {instanceID: 4066}
+    - Class: 114
+      Script: {instanceID: 4248}
+    - Class: 114
+      Script: {instanceID: 4526}
+    - Class: 114
+      Script: {instanceID: 4744}
+    - Class: 114
+      Script: {instanceID: 4752}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 1971053207
+      Script: {instanceID: 0}
+    Assets/MyGame/Scenes/Final Scenes/06_Grade.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -259,6 +402,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
     - Class: 81
@@ -266,19 +411,86 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1784}
+      Script: {instanceID: 1462}
     - Class: 114
-      Script: {instanceID: 2470}
+      Script: {instanceID: 1464}
     - Class: 114
-      Script: {instanceID: 2616}
+      Script: {instanceID: 1568}
     - Class: 114
-      Script: {instanceID: 2658}
+      Script: {instanceID: 1790}
     - Class: 114
-      Script: {instanceID: 2786}
+      Script: {instanceID: 1870}
     - Class: 114
-      Script: {instanceID: 2998}
+      Script: {instanceID: 2046}
     - Class: 114
-      Script: {instanceID: 43722}
+      Script: {instanceID: 2094}
+    - Class: 114
+      Script: {instanceID: 2566}
+    - Class: 114
+      Script: {instanceID: 2714}
+    - Class: 114
+      Script: {instanceID: 2756}
+    - Class: 114
+      Script: {instanceID: 3094}
+    - Class: 114
+      Script: {instanceID: 3200}
+    - Class: 114
+      Script: {instanceID: 3380}
+    - Class: 114
+      Script: {instanceID: 4072}
+    - Class: 114
+      Script: {instanceID: 4464}
+    - Class: 114
+      Script: {instanceID: 4526}
+    - Class: 114
+      Script: {instanceID: 4534}
+    - Class: 114
+      Script: {instanceID: 4888}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/MyGame/Scenes/Final Scenes/07_Reset.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1464}
+    - Class: 114
+      Script: {instanceID: 1870}
+    - Class: 114
+      Script: {instanceID: 2566}
+    - Class: 114
+      Script: {instanceID: 2714}
+    - Class: 114
+      Script: {instanceID: 2756}
+    - Class: 114
+      Script: {instanceID: 3094}
+    - Class: 114
+      Script: {instanceID: 4918}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -300,16 +512,46 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
+      Hash: a6e561615949734e9f12f9b61661f43e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SetDropdownValues
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DontDestroyOnLoad
+  - hash:
+      serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: a6e561615949734e9f12f9b61661f43e
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
+      Hash: f6df2a219af2be8a3990f01a3c01f3a8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AppearWithPlaybackEngine
+  - hash:
+      serializedVersion: 2
+      Hash: 33503f170746ac130103c866e7537a63
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ComputerInteraction
   - hash:
       serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
@@ -378,6 +620,12 @@ ScriptsOnlyBuild:
     className: HorizontalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: a8ed04def591bae48ec833618a455709
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Corrections
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -388,6 +636,30 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: e6a5ec1cdf41ac350e1cd2d363ab2a00
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Grading
+  - hash:
+      serializedVersion: 2
+      Hash: 7c0e19d5d3580590080261b7cb0577e3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Switch
+  - hash:
+      serializedVersion: 2
+      Hash: edb63232d1883645c78d91eacf791743
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FadeToBlack
+  - hash:
+      serializedVersion: 2
+      Hash: 06f6b3220392b47b165f1538625bb764
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ConsistentVariables
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -438,10 +710,22 @@ ScriptsOnlyBuild:
     className: EnumerableTestState
   - hash:
       serializedVersion: 2
+      Hash: 20c9a74d659b6895cfdb5f4624ba8daa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShowGrading
+  - hash:
+      serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: 9736ee02fdff414cc0521cb1e58886e3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Countdown
   - hash:
       serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
@@ -484,12 +768,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestRunner.Utils
     className: TestRunCallbackListener
-  - hash:
-      serializedVersion: 2
-      Hash: ae83e830e7a90c0aff918c4c2e520825
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: GraphicRaycaster
   - hash:
       serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
@@ -546,6 +824,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Temp_SpaceToStart
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -586,6 +870,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MouseHover
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -720,7 +1010,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: e372d5ea5e96067daaa3808f78ec2280
+      Hash: ca7ee1e152cb587743bd4174e8734162
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GremlinTimers
@@ -730,6 +1020,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: 34b2d841370ddefb57dfa71982669960
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Clicks
   - hash:
       serializedVersion: 2
       Hash: 523ce309f50d9eee6a8fc0e2f86c9c97
@@ -760,6 +1056,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalReceiver
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LightSwitch
   - hash:
       serializedVersion: 2
       Hash: 040dd48e3a027d5424519a5fa2009df4
@@ -798,10 +1100,28 @@ ScriptsOnlyBuild:
     className: SpriteSkinEntity
   - hash:
       serializedVersion: 2
+      Hash: 8eb0261a66b266bf8f3e61a9d66c2e44
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Bad_SwitchOrderValidator
+  - hash:
+      serializedVersion: 2
       Hash: 28cfb4bd305dd11c6326cc3ee7c14138
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.Experimental.U2D.Animation
     className: SpriteLibraryAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DisappearInGame
+  - hash:
+      serializedVersion: 2
+      Hash: a9d4d4f9af9eae4f9b5d8d97127a4a87
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SFX
   - hash:
       serializedVersion: 2
       Hash: 63bdc2cf3273aa9bf650350f19d2af61
@@ -814,6 +1134,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: f57d20c59a024ec4e614109e378e70e3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SwitchOrderValidator
   - hash:
       serializedVersion: 2
       Hash: fd68d84f33fad85aac38f2739c0ee270
@@ -831,7 +1157,31 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
+    className: DropdownHandleInput
+  - hash:
+      serializedVersion: 2
+      Hash: 6bffa3857dc42dd750af83541a1e8bc9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SwitchChange
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
     className: DropdownValues
+  - hash:
+      serializedVersion: 2
+      Hash: 21c45558ad6afdfa8b2ec6310396bd60
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CanvasElement_FollowMouse
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Reset
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -876,32 +1226,24 @@ ScriptsOnlyBuild:
     className: FabrikSolver2D
   - hash:
       serializedVersion: 2
-      Hash: e6a5ec1cdf41ac350e1cd2d363ab2a00
+      Hash: c4f13806975e124b55e9a1ec87c4e329
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Grading
+    className: Initialise
   - hash:
       serializedVersion: 2
-      Hash: f57d20c59a024ec4e614109e378e70e3
+      Hash: 963038867df638a3a5378b57d1571390
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: SwitchOrderValidator
-  - hash:
-      serializedVersion: 2
-      Hash: 7c0e19d5d3580590080261b7cb0577e3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Switch
-  - hash:
-      serializedVersion: 2
-      Hash: 20c9a74d659b6895cfdb5f4624ba8daa
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ShowGrading
+    className: CursorImage
   platform: 5
   scenePathNames:
-  - Assets/MyGame/Scenes/Greybox Scenes/GB_FrontDesk.unity
-  - Assets/MyGame/Scenes/Greybox Scenes/GB_ComputerScreen.unity
-  - Assets/MyGame/Scenes/Greybox Scenes/GB_BackDesk.unity
-  - Assets/MyGame/Scenes/Greybox Scenes/GB_Grade.unity
-  playerPath: C:/Users/mschimpf/Documents/Builds/FirstPrototype (NoWebGL)/Audio Bites.exe
+  - Assets/MyGame/Scenes/Final Scenes/00_MainMenu.unity
+  - Assets/MyGame/Scenes/Final Scenes/01_Initialisation.unity
+  - Assets/MyGame/Scenes/Final Scenes/02_Introduction.unity
+  - Assets/MyGame/Scenes/Final Scenes/03_FrontDesk.unity
+  - Assets/MyGame/Scenes/Final Scenes/04_BackDesk.unity
+  - Assets/MyGame/Scenes/Final Scenes/05_Computer.unity
+  - Assets/MyGame/Scenes/Final Scenes/06_Grade.unity
+  - Assets/MyGame/Scenes/Final Scenes/07_Reset.unity
+  playerPath: C:/Users/mschimpf/Documents/Builds/TestResolution/Audio Bites.exe
