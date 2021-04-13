@@ -53,6 +53,11 @@ public class SwitchChange : MonoBehaviour
             switchVar = variables.videoEngine;
         }
 
+        if (this.gameObject.name == "ClipboardButton")
+        {
+            switchVar = variables.clipboardShown;
+        }
+
         //Turn on/off child objects
         if (switchVar == true)
         {

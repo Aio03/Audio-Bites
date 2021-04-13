@@ -156,6 +156,12 @@ public class Clicks : MonoBehaviour
                     SceneChange("07_Reset");
                 }
 
+                //Video Engine Option
+                if (objectName == "ClipboardButton")
+                {
+                    variables.clipboardShown = !variables.clipboardShown;
+                }
+
 
                 ////Example of switching variables with a click
                 //if (objectName == "OBJECTNAME")

@@ -8,16 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/MyGame/Scenes/Greybox Scenes/GB_FrontDesk.unity
     guid: 377581623b7fd75488486f23d4cb32ce
-  - enabled: 1
+  - enabled: 0
     path: Assets/MyGame/Scenes/Greybox Scenes/GB_ComputerScreen.unity
     guid: a9826c240dbfbdf4f95b8fd1598832b4
-  - enabled: 1
+  - enabled: 0
     path: Assets/MyGame/Scenes/Greybox Scenes/GB_BackDesk.unity
     guid: a23c8d2918e994645b3241d6d1652d3c
-  - enabled: 1
+  - enabled: 0
     path: Assets/MyGame/Scenes/Greybox Scenes/GB_Grade.unity
     guid: a27d051661e52c8449f1bce6b99b3013
   - enabled: 1

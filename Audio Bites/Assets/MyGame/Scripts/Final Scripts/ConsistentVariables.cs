@@ -13,6 +13,8 @@ public class ConsistentVariables : MonoBehaviour
     public bool lights = true;
     [HideInInspector]
     public bool computerIsOn;
+    [HideInInspector]
+    public bool clipboardShown;
 
     //Real Switches
     [HideInInspector]
