@@ -49,8 +49,6 @@ public class ConsistentVariables : MonoBehaviour
     public bool resetSystem;
     [HideInInspector]
     public bool switchesOrder;
-    [HideInInspector]
-    public bool bothSpeakers;
 
     //Scenario Specific Variables
     [HideInInspector]

@@ -31,7 +31,6 @@ public class FadeToBlack : MonoBehaviour
 
     public void Fade(bool fadeTo, int speed)
     {
-        print("Fade");
         StartCoroutine(FadeBlackOutSquare(fadeTo, speed));
     }
 

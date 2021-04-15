@@ -13,11 +13,11 @@ using UnityEngine;
 
 public class Bad_SwitchOrderValidator : MonoBehaviour
 {
-    public bool switch_one;
-    public bool switch_two;
-    public bool switch_three;
-    public bool switch_four;
-    public bool correctOrder;
+    bool switch_one;
+    bool switch_two;
+    bool switch_three;
+    bool switch_four;
+    bool correctOrder;
 
     private ConsistentVariables variables;
 
@@ -29,10 +29,12 @@ public class Bad_SwitchOrderValidator : MonoBehaviour
 
     private void Update()
     {
+        //Checks if desk is on and nothing else for switch one
         if (variables.deskPower == true && variables.interfacePower == false && variables.computerPower == false && variables.speakerPower == false)
         {
             switch_one = true;
         }
+        //Checks if desk and interface are on for switch two, if switch one hasn't been true then switch two can't be so it checks that as well
         if (variables.deskPower == true && variables.interfacePower == true && variables.computerPower == false && variables.speakerPower == false)
         {
             if (switch_one == true)
@@ -40,6 +42,7 @@ public class Bad_SwitchOrderValidator : MonoBehaviour
                 switch_two = true;
             }
         }
+        //etc
         if (variables.deskPower == true && variables.interfacePower == true && variables.computerPower == true && variables.speakerPower == false)
         {
             if (switch_one == true && switch_two == true)
@@ -47,6 +50,7 @@ public class Bad_SwitchOrderValidator : MonoBehaviour
                 switch_three = true;
             }
         }
+        //etc
         if (variables.deskPower == true && variables.interfacePower == true && variables.computerPower == true && variables.speakerPower == true)
         {
             if (switch_one == true && switch_two == true && switch_three == true)
@@ -55,6 +59,7 @@ public class Bad_SwitchOrderValidator : MonoBehaviour
             }
         }
 
+        //If the relevant variable is turned off then the switch order cannot be true and resets it to false
         if (variables.deskPower == false)
         {
             switch_one = false;
@@ -72,13 +77,25 @@ public class Bad_SwitchOrderValidator : MonoBehaviour
             switch_four = false;
         }
 
+        //Checks if all switches are true then the correct order is true
         if (switch_one == true && switch_two == true && switch_three == true && switch_four == true)
         {
-            correctOrder = true;   
+            variables.switchesOrder = true;
         } 
         else
         {
-            correctOrder = false;
+            variables.switchesOrder = false;
+        }
+
+        //Similar to how the switches order is checked but done seperately so that grading can be done seperately for switch order and whether the system was reset
+        if (variables.power == true && variables.deskPower == false && variables.interfacePower == false && variables.computerPower == false && variables.speakerPower == false)
+        {
+            variables.resetSystem = true;
+        }
+
+        if (variables.power == false)
+        {
+            variables.resetSystem = false;
         }
 
     }

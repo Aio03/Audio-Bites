@@ -93,7 +93,7 @@ public class Corrections : MonoBehaviour
             y_placement = 175;
             x_placement = 120;
         }
-        if (variables.bothSpeakers == false)
+        if (variables.speakerPower == false)
         {
             var m_RectTransform = noSpeakers.GetComponent<RectTransform>();
             m_RectTransform.anchoredPosition = new Vector2(x_placement, y_placement);
