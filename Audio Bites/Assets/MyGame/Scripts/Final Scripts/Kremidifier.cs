@@ -66,6 +66,14 @@ public class Kremidifier : MonoBehaviour
         variables.lights = false;
         //Changes scene to the front desk
         SceneManager.LoadScene(sceneName: "03_FrontDesk");
+        //Enables the Text box, then waits 4 seconds then destroys it
+        yield return new WaitForSeconds(0.4f);
+        var textBox = GameObject.Find("TextboxCanvas");
+        textBox.transform.GetChild(0).gameObject.SetActive(true);
+        textBox.transform.GetChild(1).gameObject.SetActive(true);
+        yield return new WaitForSeconds(4);
+        textBox.transform.GetChild(0).gameObject.SetActive(false);
+        textBox.transform.GetChild(1).gameObject.SetActive(false);
         //Finishes coroutine
         yield return null;
     }
@@ -73,7 +81,6 @@ public class Kremidifier : MonoBehaviour
     //The randomising variables
     private float deskSwitchRandom;
     private float interfaceSwitchRandom;
-    private float computerSwitchRandom;
     private float speakersSwitchRandom;
     private float ignoreErrorsRandom;
     private float dynamicProcessingRandom;
@@ -92,7 +99,6 @@ public class Kremidifier : MonoBehaviour
         //True-False Variables
         deskSwitchRandom = Random.Range(0f, 1f);
         interfaceSwitchRandom = Random.Range(0f, 1f);
-        computerSwitchRandom = Random.Range(0f, 1f);
         speakersSwitchRandom = Random.Range(0f, 1f);
         ignoreErrorsRandom = Random.Range(0f, 1f);
         dynamicProcessingRandom = Random.Range(0f, 1f);

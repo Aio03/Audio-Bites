@@ -77,7 +77,7 @@ public class SFX : MonoBehaviour
     }
     public void PlayThunderClap()
     {
-        if (staticSettings.loudNoises == false)
+        if (StaticSettings.loudNoises == false)
         {
             audioVariables.thunderClap.Play();
         }

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8018133631310706534}
   - component: {fileID: 1625663003240327696}
   - component: {fileID: -5021562302762668871}
+  - component: {fileID: -6138298965622031520}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -49,7 +50,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da8e53fb8a537414784cc5cf0451dc0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testSound: {fileID: 0}
 --- !u!114 &9082104116917368271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,6 +93,7 @@ MonoBehaviour:
   wantedBufferSize: 0
   wantedIgnoreErrors: 0
   wantedDynamicProcessing: 0
+  haveGremlinsArrived: 0
 --- !u!114 &8018133631310706534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,6 +134,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activateCoroutine: 0
+  gremlinArrivingText: {fileID: 3432087984437321526, guid: 3518073d6ba26994eb4c06679d7b42f1, type: 3}
+  soundEffects: {fileID: 0}
+--- !u!114 &-6138298965622031520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476616279818162150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 048e814bdcb1c254ba8f9374f54d13d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6743121852473571461
 PrefabInstance:
   m_ObjectHideFlags: 0
