@@ -15,7 +15,7 @@ using UnityEngine.SceneManagement;
 
 public class Kremidifier : MonoBehaviour
 {
-
+    [HideInInspector]
     public bool activateCoroutine;
 
     private void Update()
@@ -27,6 +27,9 @@ public class Kremidifier : MonoBehaviour
         }
     }
 
+    //For playing sounds
+    public SFX soundEffects;
+
     //Variables
     private ConsistentVariables variables;
 
@@ -34,6 +37,7 @@ public class Kremidifier : MonoBehaviour
     {
         ///Finds the variables needed from the GameController
         variables = GameObject.FindGameObjectWithTag("GameController").GetComponent<ConsistentVariables>();
+        soundEffects = variables.gameObject.GetComponent<SFX>();
     }
 
     public IEnumerator GremlinArrival(float lengthOfLaugh)
@@ -44,10 +48,15 @@ public class Kremidifier : MonoBehaviour
         var fader = GameObject.Find("FadingImage").GetComponent<FadeToBlack>();
         //Activate the fader's fade, check FadeToBlack script for more information
         fader.Fade(true, 3);
+
+        //Play Thunder Sound
+        soundEffects.PlayThunderClap();
+
         //Wait the same time as the fade
         yield return new WaitForSeconds(3);
 
-        ////////play sound
+        //Play Gremlin Laugh sound
+        soundEffects.PlayGremlinLaugh();
         
         //Wait for length of the sound
         yield return new WaitForSeconds(lengthOfLaugh);

@@ -32,11 +32,55 @@ public class SFX : MonoBehaviour
     //    name.Play();
     //}
 
-    public AudioSource testSound;
+    Audio audioVariables;
 
-    public void PlayTestSound()
+    private void Start()
     {
-        testSound.Play();
+        audioVariables = GameObject.FindGameObjectWithTag("AudioVariables").GetComponent<Audio>();
+    }
+
+    public void PlaySoundTrackMidnight()
+    {
+        audioVariables.soundtrack_Midnight.Play();
+    }
+    public void PlayGremlinLaugh()
+    {
+        audioVariables.gremlinLaugh.Play();
+    }
+    public void PlayMouseClickHeavy()
+    {
+        audioVariables.mouseClickHeavy.Play();
+    }
+    public void PlayMouseClickLight()
+    {
+        audioVariables.mouseClickLight.Play();
+    }
+    public void PlaySoundtrackPuzzleOne()
+    {
+        audioVariables.soundtrack_PuzzleOne.Play();
+    }
+    public void PlaySoundtrackPuzzleTwo()
+    {
+        audioVariables.soundtrack_PuzzleTwo.Play();
+    }
+    public void PlaySoundtrackPuzzleThree()
+    {
+        audioVariables.soundtrack_PuzzleThree.Play();
+    }
+    public void PlaySwitchSoundOne()
+    {
+        audioVariables.switchSoundOne.Play();
+    }
+    public void PlaySwitchSoundTwo()
+    {
+        audioVariables.switchSoundTwo.Play();
+    }
+    public void PlayThunderClap()
+    {
+        if (staticSettings.loudNoises == false)
+        {
+            audioVariables.thunderClap.Play();
+        }
     }
 
 }

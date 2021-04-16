@@ -12,11 +12,13 @@ public class Reset : MonoBehaviour
 
     private GameObject gameController;
     private GameObject mainCamera;
+    private GameObject audioVariables;
 
     private void Awake()
     {
         gameController = GameObject.FindGameObjectWithTag("GameController");
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+        audioVariables = GameObject.FindGameObjectWithTag("AudioVariables");
     }
 
     private void Update()
@@ -29,8 +31,12 @@ public class Reset : MonoBehaviour
         {
             Object.Destroy(mainCamera);
         }
+        if (audioVariables != null)
+        {
+            Object.Destroy(audioVariables);
+        }
 
-        if (gameController == null && mainCamera == null)
+        if (gameController == null && mainCamera == null && audioVariables == null)
         {
             SceneManager.LoadScene(sceneName: "00_MainMenu");
         }

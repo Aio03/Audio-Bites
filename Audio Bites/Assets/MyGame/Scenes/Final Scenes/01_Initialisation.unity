@@ -469,6 +469,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameController: {fileID: 1476616279818162150, guid: 021ab5599c43c6b42aa0d6a938d2cab6, type: 3}
   cameraPrefab: {fileID: 5911164646961976598, guid: 2f7f45f48d30b4044af4cc8281c1b4b9, type: 3}
+  audioVariablesPrefab: {fileID: 8999845062158807342, guid: 284b5d467084d9d42a0d837845c70331, type: 3}
 --- !u!114 &1125361295
 MonoBehaviour:
   m_ObjectHideFlags: 0

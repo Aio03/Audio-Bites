@@ -14,11 +14,13 @@ public class Initialise : MonoBehaviour
     // Reference to the Game Controller Prefab
     public GameObject gameController;
     public GameObject cameraPrefab;
+    public GameObject audioVariablesPrefab;
 
     void Start()
     {
         // Instantiate at position (0, 0, 0) and zero rotation.
         Instantiate(cameraPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+        Instantiate(audioVariablesPrefab, new Vector3(0, 0, 0), Quaternion.identity);
         Instantiate(gameController, new Vector3(0, 0, 0), Quaternion.identity);
     }
 

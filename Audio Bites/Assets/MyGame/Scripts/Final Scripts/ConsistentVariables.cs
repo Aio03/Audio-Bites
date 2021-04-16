@@ -58,6 +58,10 @@ public class ConsistentVariables : MonoBehaviour
     [HideInInspector]
     public bool wantedDynamicProcessing;
 
+    //Gremlin Variables
+    [HideInInspector]
+    public bool haveGremlinsArrived;
+
     private void Update()
     {
         if (power == true && computerPower == true)
