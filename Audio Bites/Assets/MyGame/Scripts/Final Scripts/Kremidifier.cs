@@ -28,7 +28,7 @@ public class Kremidifier : MonoBehaviour
     }
 
     //For playing sounds
-    public SFX soundEffects;
+    SFX soundEffects;
 
     //Variables
     private ConsistentVariables variables;

@@ -58,6 +58,20 @@ public class SwitchChange : MonoBehaviour
             switchVar = variables.clipboardShown;
         }
 
+        //Game Settings
+        if (this.gameObject.name == "Opt_LoudSounds")
+        {
+            switchVar = StaticSettings.loudNoises;
+        }
+        if (this.gameObject.name == "Opt_Music")
+        {
+            switchVar = StaticSettings.music;
+        }
+        if (this.gameObject.name == "Opt_SoundEffects")
+        {
+            switchVar = StaticSettings.soundEffects;
+        }
+
         //Turn on/off child objects
         if (switchVar == true)
         {

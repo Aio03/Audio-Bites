@@ -41,45 +41,79 @@ public class SFX : MonoBehaviour
 
     public void PlaySoundTrackMidnight()
     {
-        audioVariables.soundtrack_Midnight.Play();
+        if (StaticSettings.music == true)
+        {
+            audioVariables.soundtrack_Midnight.Play();
+        }
     }
     public void PlayGremlinLaugh()
     {
-        audioVariables.gremlinLaugh.Play();
+        if (StaticSettings.soundEffects == true)
+        {
+            audioVariables.gremlinLaugh.Play();
+        }
     }
     public void PlayMouseClickHeavy()
     {
-        audioVariables.mouseClickHeavy.Play();
+        if (StaticSettings.soundEffects == true)
+        {
+            audioVariables.mouseClickHeavy.Play();
+        }
     }
     public void PlayMouseClickLight()
     {
-        audioVariables.mouseClickLight.Play();
+        if (StaticSettings.soundEffects == true)
+        {
+            audioVariables.mouseClickLight.Play();
+        }
     }
     public void PlaySoundtrackPuzzleOne()
     {
-        audioVariables.soundtrack_PuzzleOne.Play();
+        if (StaticSettings.music == true)
+        {
+            audioVariables.soundtrack_PuzzleOne.Play();
+        }
     }
     public void PlaySoundtrackPuzzleTwo()
     {
-        audioVariables.soundtrack_PuzzleTwo.Play();
+        if (StaticSettings.music == true)
+        {
+            audioVariables.soundtrack_PuzzleTwo.Play();
+        }
     }
     public void PlaySoundtrackPuzzleThree()
     {
-        audioVariables.soundtrack_PuzzleThree.Play();
+        if (StaticSettings.music == true)
+        {
+            audioVariables.soundtrack_PuzzleThree.Play();
+        }
     }
     public void PlaySwitchSoundOne()
     {
-        audioVariables.switchSoundOne.Play();
+        if (StaticSettings.soundEffects == true)
+        {
+            audioVariables.switchSoundOne.Play();
+        }
     }
     public void PlaySwitchSoundTwo()
     {
-        audioVariables.switchSoundTwo.Play();
+        if (StaticSettings.soundEffects == true)
+        {
+            audioVariables.switchSoundTwo.Play();
+        }
     }
     public void PlayThunderClap()
     {
-        if (StaticSettings.loudNoises == false)
+        if (StaticSettings.loudNoises == true && StaticSettings.soundEffects == true)
         {
             audioVariables.thunderClap.Play();
+        }
+    }
+    public void PlaySuctionHoodButton()
+    {
+        if (StaticSettings.soundEffects == true)
+        {
+            audioVariables.suctionHoodButton.Play();
         }
     }
 

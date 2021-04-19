@@ -17,10 +17,14 @@ public class Clicks : MonoBehaviour
     //Variables
     private ConsistentVariables variables;
 
+    //For playing sounds
+    SFX soundEffects;
+
     private void Start()
     {
         ///Finds the variables needed from the GameController
         variables = GameObject.FindGameObjectWithTag("GameController").GetComponent<ConsistentVariables>();
+        soundEffects = variables.gameObject.GetComponent<SFX>();
     }
 
     private void Update()
@@ -28,6 +32,7 @@ public class Clicks : MonoBehaviour
         ///Gets the mouse input
         if (Input.GetMouseButtonDown(0))
         {
+            
             ///Finds the mouse position
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
@@ -47,6 +52,7 @@ public class Clicks : MonoBehaviour
                 if (objectName == "LightSwitch")
                 {
                     variables.lights = !variables.lights;
+                    soundEffects.PlaySwitchSoundOne();
                 }
 
                 //Back Desk Arrow Scene Change
@@ -64,6 +70,7 @@ public class Clicks : MonoBehaviour
                 //Power Ports Switches
                 if (objectName == "Power")
                 {
+                    soundEffects.PlaySwitchSoundTwo();
                     variables.power = !variables.power;
                 }
 
@@ -79,24 +86,28 @@ public class Clicks : MonoBehaviour
                 //Speaker Switch
                 if (objectName == "Speaker")
                 {
+                    soundEffects.PlaySuctionHoodButton();
                     variables.speakerPower = !variables.speakerPower;
                 }
 
                 //Desk Switch
                 if (objectName == "Desk")
                 {
+                    soundEffects.PlaySuctionHoodButton();
                     variables.deskPower = !variables.deskPower;
                 }
 
                 //Interface Switch
                 if (objectName == "Interface")
                 {
+                    soundEffects.PlaySuctionHoodButton();
                     variables.interfacePower = !variables.interfacePower;
                 }
 
                 //Computer Power Switch
                 if (objectName == "ComputerPower")
                 {
+                    soundEffects.PlaySuctionHoodButton();
                     variables.computerPower = !variables.computerPower;
                 }
 
@@ -160,6 +171,24 @@ public class Clicks : MonoBehaviour
                 if (objectName == "ClipboardButton")
                 {
                     variables.clipboardShown = !variables.clipboardShown;
+                }
+
+                //Game Setting Loud Noises
+                if (objectName == "Opt_LoudSounds")
+                {
+                    StaticSettings.loudNoises = !StaticSettings.loudNoises;
+                }
+
+                //Game Settings Music
+                if (objectName == "Opt_Music")
+                {
+                    StaticSettings.music = !StaticSettings.music;
+                }
+
+                //Game Settings Sound Effects
+                if (objectName == "Opt_SoundEffects")
+                {
+                    StaticSettings.soundEffects = !StaticSettings.soundEffects;
                 }
 
 

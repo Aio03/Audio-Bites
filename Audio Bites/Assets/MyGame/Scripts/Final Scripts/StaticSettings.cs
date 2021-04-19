@@ -4,5 +4,7 @@ using UnityEngine;
 
 static class StaticSettings
 {
-    public static bool loudNoises;
+    public static bool loudNoises = true;
+    public static bool music = true;
+    public static bool soundEffects = true;
 }
