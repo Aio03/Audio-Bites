@@ -448,6 +448,8 @@ struct CompilationRelaxationsAttribute_t661FDDC06629BDA607A42BD660944F039FE03AFF
 struct CompilerGeneratedAttribute_t39106AB982658D7A94C27DEF3C48DB2F5F7CD75C;
 // System.Threading.Tasks.CompletionActionInvoker
 struct CompletionActionInvoker_t66AE143673E0FA80521F01E8FBF6651194AC1E9F;
+// System.Diagnostics.ConditionalAttribute
+struct ConditionalAttribute_t5DD558ED67ECF65952A82B94A75C6E8E121B2D8C;
 // System.Runtime.Remoting.ConfigHandler
 struct ConfigHandler_t669F653CE4E8ABF2323F028523BEDFB5C56C3760;
 // System.Reflection.ConstructorInfo
@@ -6952,6 +6954,25 @@ public:
 };
 
 
+// System.Diagnostics.ConditionalAttribute
+struct  ConditionalAttribute_t5DD558ED67ECF65952A82B94A75C6E8E121B2D8C  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
+{
+public:
+	// System.String System.Diagnostics.ConditionalAttribute::m_conditionString
+	String_t* ___m_conditionString_0;
+
+public:
+	inline static int32_t get_offset_of_m_conditionString_0() { return static_cast<int32_t>(offsetof(ConditionalAttribute_t5DD558ED67ECF65952A82B94A75C6E8E121B2D8C, ___m_conditionString_0)); }
+	inline String_t* get_m_conditionString_0() const { return ___m_conditionString_0; }
+	inline String_t** get_address_of_m_conditionString_0() { return &___m_conditionString_0; }
+	inline void set_m_conditionString_0(String_t* value)
+	{
+		___m_conditionString_0 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___m_conditionString_0), (void*)value);
+	}
+};
+
+
 // System.DateTime
 struct  DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405 
 {
@@ -7652,6 +7673,15 @@ public:
 	{
 		___m_value_0 = value;
 	}
+};
+
+
+// System.Security.Permissions.SecurityAttribute
+struct  SecurityAttribute_tB471CCD1C8F5D885AC2FD10483CB9C1BA3C9C922  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
+{
+public:
+
+public:
 };
 
 
@@ -10969,6 +10999,15 @@ public:
 		____targetThis_12 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&____targetThis_12), (void*)value);
 	}
+};
+
+
+// System.Security.Permissions.CodeAccessSecurityAttribute
+struct  CodeAccessSecurityAttribute_tDFD5754F85D0138CA98EAA383EA7D50B5503C319  : public SecurityAttribute_tB471CCD1C8F5D885AC2FD10483CB9C1BA3C9C922
+{
+public:
+
+public:
 };
 
 
@@ -37054,6 +37093,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ClientIdentity_get_TargetUri_m39AC3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // System.Void System.Globalization.CodePageDataItem::.ctor(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CodePageDataItem__ctor_m8A1832B270F2CF8A48231E91AB35135704554F47 (CodePageDataItem_t09A62F57142BF0456C8F414898A37E79BCC9F09E * __this, int32_t ___dataIndex0, const RuntimeMethod* method)
 {
@@ -40177,6 +40224,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CompletionActionInvoker_ExecuteWorkItem_
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CompletionActionInvoker_MarkAborted_mFC78ABE125D0501CAC1FE241AE605163975E973A (CompletionActionInvoker_t66AE143673E0FA80521F01E8FBF6651194AC1E9F * __this, ThreadAbortException_t16772A32C3654FCFF0399F11874CB783CC51C153 * ___tae0, const RuntimeMethod* method)
 {
 	{
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void System.Diagnostics.ConditionalAttribute::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConditionalAttribute__ctor_m43C71F47F8ED8FDF9A11FB20E8916C3737DD66AF (ConditionalAttribute_t5DD558ED67ECF65952A82B94A75C6E8E121B2D8C * __this, String_t* ___conditionString0, const RuntimeMethod* method)
+{
+	{
+		Attribute__ctor_m5C1862A7DFC2C25A4797A8C5F681FBB5CB53ECE1(__this, /*hidden argument*/NULL);
+		String_t* L_0 = ___conditionString0;
+		__this->set_m_conditionString_0(L_0);
 		return;
 	}
 }

@@ -490,8 +490,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Information Text - If this is showing then something has gone wrong
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
+  m_sharedMaterial: {fileID: 5791552595016231438, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -515,8 +515,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -855,19 +855,33 @@ MonoBehaviour:
   wrongCacheSize: {fileID: 5291229434182236642}
   nothingWasWrong: Congratulations you're all setup! Now we just have to figure out
     how to make music...
-  noResetInfo: no reset
-  wrongOrderInfo: wrong order
-  noMainPowerInfo: no power
-  noDeskInfo: no desk
-  noInterfaceInfo: no interface
-  noComputerInfo: no computer
-  noSpeakersInfo: no speakers
-  wrongPlaybackEngineInfo: wrong playback engine
-  wrongBufferSizeInfo: wrong buffer size
-  wrongIgnoreErrorsInfo: wrong ignore errors
-  wrongDynamicProcessingInfo: wrong dynamic processing
-  wrongVideoEngineInfo: wrong video engine
-  wrongCacheSizeInfo: wrong cache size
+  noResetInfo: Before turning on the power you should reset all the systems, turning
+    everything off.
+  wrongOrderInfo: 'You didn''t turn everything on in the right order. It needs to
+    be turned on as: Desk, Interface, Computer and then Speakers'
+  noMainPowerInfo: You didn't have the main power turned on. This needs to be on
+    for everything else to work.
+  noDeskInfo: You didn't have the Desk turned on. You'll need this for working on
+    your music.
+  noInterfaceInfo: You didn't have the Interface turned on. You'll need this for
+    working on your music.
+  noComputerInfo: You didn't have the Computer turned on. You'll need this for working.
+  noSpeakersInfo: You didn't have the Speakers turned on. You won't be able to hear
+    anything without these.
+  wrongPlaybackEngineInfo: You chose the wrong Playback Engine. It needs to be set
+    to Fireface.
+  wrongBufferSizeInfo: You chose the wrong Buffer Size. For mixing you need a higher
+    buffer, for live recording you need a lower buffer so that you don't get any
+    interruptions.
+  wrongIgnoreErrorsInfo: Your "Ignore Errors" selection was wrong, For live recording
+    you don't want errors to interrupt your recording, with mixing you want to know
+    when something has gone wrong.
+  wrongDynamicProcessingInfo: Your Dynamic Plug-in Processing should always be on
+    so that any plug-ins you're using will work properly.
+  wrongVideoEngineInfo: You turned your video engine on but you would only need that
+    if you have video with your audio.
+  wrongCacheSizeInfo: You chose the wrong Cache size selection. Leaving this on the
+    default is the best method as the computer knows best.
 --- !u!1 &1872042324
 GameObject:
   m_ObjectHideFlags: 0
@@ -1096,8 +1110,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '   Didn''t turn on Desk'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
+  m_sharedMaterial: {fileID: 5791552595016231438, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1121,8 +1135,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1336,8 +1350,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '   Chose wrong Buffer Size'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
+  m_sharedMaterial: {fileID: 5791552595016231438, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1361,8 +1375,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1622,8 +1636,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '   Wrong order of switches'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
+  m_sharedMaterial: {fileID: 5791552595016231438, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1647,8 +1661,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1907,8 +1921,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '   Chose wrong Playback'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
+  m_sharedMaterial: {fileID: 5791552595016231438, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1932,8 +1946,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2296,8 +2310,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '   Video Engine done wrong'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
+  m_sharedMaterial: {fileID: 5791552595016231438, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2321,8 +2335,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2422,8 +2436,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '   Didn''t turn on main power'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
+  m_sharedMaterial: {fileID: 5791552595016231438, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2447,8 +2461,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2671,8 +2685,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '   Dynam. Proc. done wrong'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
+  m_sharedMaterial: {fileID: 5791552595016231438, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2696,8 +2710,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2956,8 +2970,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '   Chose wrong Cache Size'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
+  m_sharedMaterial: {fileID: 5791552595016231438, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2981,8 +2995,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3356,8 +3370,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '   Ignore Errors done wrong'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
+  m_sharedMaterial: {fileID: 5791552595016231438, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3381,8 +3395,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3613,8 +3627,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '   Didn''t turn on Interface'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
+  m_sharedMaterial: {fileID: 5791552595016231438, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3638,8 +3652,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3872,8 +3886,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '   Didn''t turn on Speakers'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
+  m_sharedMaterial: {fileID: 5791552595016231438, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3897,8 +3911,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4051,8 +4065,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '   Didn''t reset system'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
+  m_sharedMaterial: {fileID: 5791552595016231438, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4076,8 +4090,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4424,8 +4438,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '   Didn''t turn on Computer'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
+  m_sharedMaterial: {fileID: 5791552595016231438, guid: c09cb357f994f7a4e89202bf9a94dcf6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4449,8 +4463,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
